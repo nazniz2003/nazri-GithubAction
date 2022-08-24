@@ -10,6 +10,7 @@ jobs:
       - name: OWASP ZAP Full Scan
         uses: zaproxy/action-full-scan@v0.4.0
         with:
-          docker_name: 'owasp/zap2docker-stable' target: 'http://testphp.vulnweb.com/'
+          docker_name: 'owasp/zap2docker-stable' 
+          target: 'http://testphp.vulnweb.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
